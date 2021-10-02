@@ -19,6 +19,14 @@
 //     return view('sample');
 // });
 
+// Route::get('/app', function() {
+//     return view('app');
+// });
+
+// Route::get('/tasks', function() {
+//     return view('app');
+// });
+
 Route::get('/{any}', function() {
-    return view('app');
+        return view('app');
 })->where('any', '.*');
